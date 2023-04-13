@@ -1,7 +1,7 @@
 name: mkdocs update
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
     types: [closed]
 jobs:

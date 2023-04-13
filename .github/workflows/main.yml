@@ -11,12 +11,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Connect to server
-        uses: appleboy/ssh-action@master
+        uses: appleboy/ssh-action@v0.1.10
         with:
           host: 123.57.73.246
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           port: 22
-      - name: Run script
-        run: |
-          echo "hello"
+          script: echo hello 

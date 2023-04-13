@@ -13,6 +13,6 @@ jobs:
         with:
           host: 123.57.73.246
           username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.KEY }}
+          key: ${{ secrets.FTQ1 }}
           port: 22
           script: echo hello 

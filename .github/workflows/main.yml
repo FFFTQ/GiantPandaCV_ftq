@@ -17,4 +17,4 @@ jobs:
           username: root
           key: ${{ secrets.FTQ1 }}
           port: 22
-          script: ./root/zdby.sh
+          script: bash /root/zdby.sh

@@ -15,8 +15,8 @@ jobs:
         with:
           host: 123.57.73.246
           username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.FTQ }}
+          password: ${{ secrets.PASSWORD }}
           port: 22
       - name: Run script
         run: |
-          ./root/zdby.sh 
+          echo "hello"

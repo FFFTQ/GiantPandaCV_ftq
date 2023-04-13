@@ -14,8 +14,8 @@ jobs:
         uses: appleboy/ssh-action@master
         with:
           host: 123.57.73.246
-          username: root
-          key: ${{ secrets.FTQ }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
           port: 22
       - name: Run script
         run: |

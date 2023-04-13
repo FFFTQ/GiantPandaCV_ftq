@@ -15,7 +15,6 @@ jobs:
         with:
           host: 123.57.73.246
           username: ${{ secrets.USERNAME }}
-          privateKey: ${{ secrets.KEY }}
-          #password: ${{ secrets.PASSWORD }}
+          key: ${{ secrets.KEY }}
           port: 22
           script: echo hello 

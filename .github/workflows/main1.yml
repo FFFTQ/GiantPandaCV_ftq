@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - name: ls -a via ssh
+      - name: ssh
         uses: garygrossgarten/github-action-ssh@release
         with:
           command: ls -a
@@ -19,3 +19,4 @@ jobs:
           username: root
           port: 22
           privateKey: ${{ secrets.FTQ }}
+          script: echo hello

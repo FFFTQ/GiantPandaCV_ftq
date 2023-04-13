@@ -1,0 +1,21 @@
+name: mkdocs test
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    types: [closed]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: ls -a via ssh
+        uses: garygrossgarten/github-action-ssh@release
+        with:
+          command: ls -a
+          host: ${{ secrets.HOST }}
+          username: root
+          port: 22
+          privateKey: ${{ secrets.FTQ }}
